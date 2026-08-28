@@ -1,6 +1,3 @@
-import random
-
-
 def quicksort(lista):
     if len(lista) <= 1:
         return lista, 0, 0  # lista, comparações, movimentações
@@ -29,25 +26,3 @@ def quicksort(lista):
     total_movimentacoes = movimentacoes + mov_menores + mov_maiores
 
     return lista_ordenada, total_comparacoes, total_movimentacoes
-
-
-def gerar_lista(tamanho):
-    lista = []
-    for i in range(tamanho):
-        numero = random.randint(1, 1000)
-        lista.append(numero)
-    return lista
-
-
-# TESTANDO O ALGORITMO
-
-print("Algoritmo Quick Sort")
-tamanho = 10
-numeros = gerar_lista(tamanho)
-print("Lista original:", numeros)
-
-lista_ordenada, comparacoes, movimentacoes = quicksort(numeros)
-
-print("Lista ordenada:", lista_ordenada)
-print("Número de comparações:", comparacoes)
-print("Número de movimentações:", movimentacoes)
