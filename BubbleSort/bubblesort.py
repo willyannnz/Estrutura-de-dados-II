@@ -13,11 +13,20 @@ def bubble_sort(lista):
                 trocas += 1
     return comparacoes, trocas
 
+
+def gerar_lista(tamanho):
+    lista = []
+    for i in range(tamanho):
+        numero = random.randint(1, 1000)
+        lista.append(numero)
+    return lista
+
 #TESTANDO O ALGORITMO
 
 print("Algoritmo Bubble Sort")
 tamanho = 10
-numeros = [random.randint(1, 100) for _ in range(tamanho)]
+numeros = gerar_lista(tamanho)
+print("Lista original:", numeros)
 comparacoes, trocas = bubble_sort(numeros)
 print("Lista ordenada:", numeros)
 print("Número de comparações:", comparacoes)
