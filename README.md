@@ -22,6 +22,18 @@ main.py                 -> Ponto de entrada único da atividade, com um
                            menu para rodar cada parte
 ```
 
+## Sobre a organização em pastas + main.py
+
+Cada parte da atividade fica na sua própria pasta (`Parte2_Ordenacao/`,
+`Parte3_BuscaMatriz/`, etc), isolada das demais — isso facilita achar e
+avaliar cada critério separadamente.
+
+Mesmo assim, o `main.py` na raiz funciona como um ponto de entrada único:
+ele reúne as partes e permite executar qualquer uma delas a partir de um
+só lugar, sem precisar entrar em cada pasta manualmente. Ele não junta o
+código das partes num arquivo só — cada uma continua rodando como um
+programa independente, mas todas acessíveis pelo mesmo menu.
+
 ## Como rodar
 
 A forma recomendada é pelo `main.py`, na raiz do repositório:
