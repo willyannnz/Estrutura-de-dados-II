@@ -12,18 +12,28 @@ Algoritmos/            -> Implementações de referência de cada algoritmo
     QuickSort/
 
 Parte1_Pesquisa/        -> Pesquisa comparativa Bubble Sort x Quick Sort
-Parte2_Ordenacao/       -> Experimento prático de ordenação, com as
-                           implementações e os testes de comparação
+Parte2_Ordenacao/       -> Experimento prático de ordenação
 Parte3_BuscaMatriz/     -> Busca sequencial em matrizes
 Parte4_HandsOn1/        -> Array de temperaturas
 Parte5_HandsOn2/        -> Matriz de sensores
 Parte6_Conclusao/       -> Análise e conclusão final
+
+main.py                 -> Ponto de entrada único da atividade, com um
+                           menu para rodar cada parte
 ```
 
 ## Como rodar
 
-Cada pasta `ParteX_*` contém um script `.py` que pode ser executado
-diretamente:
+A forma recomendada é pelo `main.py`, na raiz do repositório:
+
+```
+python main.py
+```
+
+Ele mostra um menu para escolher qual parte executar (Parte 2 a 5) e
+continua rodando até você escolher sair.
+
+Também é possível rodar cada parte individualmente:
 
 ```
 python Parte2_Ordenacao/parte2.py
