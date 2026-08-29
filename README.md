@@ -49,6 +49,9 @@ Também é possível rodar cada parte individualmente:
 
 ```
 python Parte2_Ordenacao/parte2.py
+python Parte3_BuscaMatriz/parte3.py
+python Parte4_HandsOn1/parte4.py
+python Parte5_HandsOn2/parte5.py
 ```
 
 ## Atividade: Arrays, Matrizes, Ordenação e Busca (29/08)
