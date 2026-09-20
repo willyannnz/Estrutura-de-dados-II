@@ -28,7 +28,10 @@ Atividade_3_Ordenacao/            -> Central de distribuição de pedidos
                                     aleatório, já ordenado e em ordem inversa
 
 Atividade_4_Filas/                -> Sistema Inteligente de Atendimento com Filas
-                                    (em andamento)
+    Atendimento_com_Filas/
+        atividade_4.py             -> Fila Clássica, Fila Circular, Fila de
+                                    Prioridade e simulação com 20 clientes
+    README.md                      -> Análise e respostas do relatório
 
 main.py                           -> Ponto de entrada único das atividades, com
                                     um menu para rodar cada parte/experimento
@@ -38,7 +41,7 @@ README.md                         -> Documentação e apresentação do projeto
 
 ## Sobre a organização em pastas + main.py
 
-Cada atividade fica na sua própria pasta (`Atividade_2_ArraysMatrizes/`, `Atividade_3_Ordenacao/`, ...), e dentro dela cada parte/experimento também tem sua própria subpasta ou arquivo — isso facilita achar e avaliar cada critério separadamente.
+Cada atividade fica na sua própria pasta (`Atividade_2_ArraysMatrizes/`, `Atividade_3_Ordenacao/`, `Atividade_4_Filas/`), e dentro dela cada parte/experimento também tem sua própria subpasta ou arquivo — isso facilita achar e avaliar cada critério separadamente.
 
 Mesmo assim, o `main.py` na raiz funciona como um ponto de entrada único: ele reúne as partes e permite executar qualquer uma delas a partir de um só lugar, sem precisar entrar em cada pasta manualmente. Ele não junta o código das partes num arquivo só — cada uma continua rodando como um programa independente, mas todas acessíveis pelo mesmo menu.
 
@@ -50,7 +53,7 @@ A forma recomendada é pelo `main.py`, na raiz do repositório:
 python main.py
 ```
 
-Ele mostra um menu com as opções da Atividade 2 (1 a 4) e da Atividade 3 (5 e 6), e continua rodando até você escolher sair.
+Ele mostra um menu com as opções da Atividade 2 (1 a 4), Atividade 3 (5 e 6) e Atividade 4 (7), e continua rodando até você escolher sair.
 
 Também é possível rodar cada script individualmente:
 
@@ -61,6 +64,7 @@ python "Atividade_2_ArraysMatrizes/Parte4_HandsOn1/parte4.py"
 python "Atividade_2_ArraysMatrizes/Parte5_HandsOn2/parte5.py"
 python "Atividade_3_Ordenacao/experimento_ordenacao.py"
 python "Atividade_3_Ordenacao/desafio_adicional.py"
+python "Atividade_4_Filas/Atendimento_com_Filas/atividade_4.py"
 ```
 
 ## Atividade 2: Arrays, Matrizes, Ordenação e Busca (29/08)
@@ -73,4 +77,4 @@ Atividade avaliativa comparando quatro algoritmos de ordenação (Bubble, Insert
 
 ## Atividade 4: Sistema Inteligente de Atendimento com Filas
 
-Atividade avaliativa envolvendo a estrutura de dados fila (queue). Em andamento.
+Atividade avaliativa implementando três estruturas de fila (Fila Clássica FIFO, Fila Circular e Fila de Prioridade com `heapq`) para simular o atendimento de clientes numa central, com um desafio final comparando o comportamento das três estruturas para os mesmos 20 clientes. Análise e respostas do relatório em `Atividade_4_Filas/README.md`.
