@@ -11,10 +11,22 @@ python Atendimento_com_Filas/atividade_4.py
 
 ## Estrutura
 
-- **Parte 1**: `Fila` — FIFO clássica, com `enqueue`, `dequeue`, `head`, `size`, `empty`.
-- **Parte 2**: `FilaCircular` — capacidade fixa (5), reaproveita posições liberadas via aritmética modular (`% capacidade`).
-- **Parte 3**: `FilaPrioridade` — usa `heapq`, com tuplas `(prioridade, contador, cliente)` para garantir desempate por ordem de chegada.
-- **Desafio Final**: gera 20 clientes aleatórios e compara o resultado das três estruturas.
+```text
+Atendimento_com_Filas/
+    cliente.py           -> Classe Cliente (nome, senha, prioridade)
+    fila_classica.py      -> Parte 1: Fila FIFO clássica
+    fila_circular.py      -> Parte 2: Fila Circular (capacidade fixa)
+    fila_prioridade.py    -> Parte 3: Fila de Prioridade (heapq)
+    desafio_final.py      -> Desafio Final: simulação com 20 clientes
+    atividade_4.py         -> Arquivo principal, importa e roda as 4 partes
+```
+
+- **Parte 1** (`fila_classica.py`): `Fila` — FIFO clássica, com `enqueue`, `dequeue`, `head`, `size`, `empty`.
+- **Parte 2** (`fila_circular.py`): `FilaCircular` — capacidade fixa (5), reaproveita posições liberadas via aritmética modular (`% capacidade`).
+- **Parte 3** (`fila_prioridade.py`): `FilaPrioridade` — usa `heapq`, com tuplas `(prioridade, contador, cliente)` para garantir desempate por ordem de chegada.
+- **Desafio Final** (`desafio_final.py`): gera 20 clientes aleatórios e compara o resultado das três estruturas.
+
+Cada arquivo pode ser executado individualmente (ex: `python fila_circular.py`) para testar só aquela parte, ou todos juntos via `atividade_4.py`.
 
 ## Relatório e Análise
 
