@@ -1,4 +1,8 @@
-from class_no.no import No
+# ⚠️ Import relativo ("..class_no") — não dá pra rodar este arquivo direto (nem no Run do VS Code).
+# Rode como módulo, a partir da raiz do repo (pasta Estrutura-de-dados-II):
+#   python -m Atividade_5.Navegador_Diretórios.navegador
+
+from ..class_no.no import No
 
 # Criando nós
 sistema = No("Sistema")
